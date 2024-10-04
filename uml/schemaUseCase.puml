@@ -1,22 +1,21 @@
 @startuml
 'https://plantuml.com/use-case-diagram
 
-:Main Admin: as Admin
-(Use the application) as (Use)
+actor User
+actor Admin
 
-User -> (Start)
-User --> (Use)
+User -> (View Transport Options)
+User -> (Book Transport)
+User -> (Pay for Services)
+'User -> (Receive Real-Time Information)
+'User -> (Provide Feedback)
+'User -> (View Promotions and Discounts)
+'User -> (Contact Emergency Services)
 
-Admin ---> (Use)
+Admin -> (Manage Transport Schedules)
+'Admin -> (Update Real-Time Information)
+'Admin -> (Monitor System Performance)
+'Admin -> (Manage User Feedback)
+'Admin -> (Manage Promotions and Discounts)
 
-note right of Admin : This is an example.
-
-note right of (Use)
-A note can also
-be on several lines
-end note
-
-note "This note is connected\nto several objects." as N2
-(Start) .. N2
-N2 .. (Use)
 @enduml

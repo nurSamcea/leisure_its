@@ -1,7 +1,11 @@
-## Requirements
+# Type of project / description
 
-### Functional Requirements
+# Assumptions of the system
 
+# stakeholders
+
+# summary of requirements
+## Functional Requirements
 - Multi-Modal Transport Integration: The system must provide options for various transport modes (metro, buses, taxis,
   bike-sharing) to facilitate seamless transitions between them.
 - Real-Time Information:Users must receive up-to-date information about transport schedules, availability, and delays
@@ -20,8 +24,7 @@
   report issues while using transport services.
 - Necessary information for the user: bus station, frequency, schedule, stops, etc.
 
-### Non-Functional Requirements
-
+## Non-Functional Requirements
 - Language Support:Offer multilingual support for the mobile application and website to cater to international
   visitors.
 - Privacy and Data Protection:Ensure that user data is protected through secure data storage, encryption, and compliance
@@ -29,8 +32,13 @@
 - Integration with Payment Gateways: Support multiple payment options, including credit cards, mobile wallets, and
   contactless payments, for booking transport services and leisure activities.
 
-## Quality Requirements
+## Domain Requirements
+- Compliance with Local Regulations: All transport services must comply with local transportation laws and safety
+  regulations.
+- Emergency Response Planning: Develop protocols for responding to emergencies, accidents, and natural disasters within
+  the transport system to ensure user safety and service continuity.
 
+## Quality Requirements
 - Performance and Scalability:The system should handle high volumes of users, especially during peak tourist seasons,
   without performance degradation.
 - Usability:The mobile application and website must have an intuitive user interface, ensuring easy navigation and quick
@@ -55,9 +63,11 @@
 - Sensor Integration: Integrate with sensors and IoT devices to collect real-time data on traffic conditions, weather
   patterns, and user behavior to optimize transport services and improve user experience.
 
-### Domain Requirements
+# Use case diagram
 
-- Compliance with Local Regulations: All transport services must comply with local transportation laws and safety
-  regulations.
-- Emergency Response Planning: Develop protocols for responding to emergencies, accidents, and natural disasters within
-  the transport system to ensure user safety and service continuity.
+# Class diagram
+Identification of classes, relationship between them and multiplicity
+
+# Identification of some relevant quality attributes (Quality Requirements)
+- Accessibility Features:Ensure that all transport modes and the booking platform are fully accessible to individuals
+  with disabilities.

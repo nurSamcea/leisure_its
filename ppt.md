@@ -1,5 +1,6 @@
 # Type of project / description
-We have launched a new bus line within the Community of Madrid that connects various neighborhoods with a range of leisure destinations throughout the city. This service is designed to improve access to popular entertainment venues, parks, and cultural attractions, making it easier for both residents and visitors to experience all that Madrid has to offer. With convenient stops and frequent schedules, our bus line aims to provide a reliable and enjoyable transportation option for those looking to explore the city's vibrant social scene. 
+
+We have launched a new bus line within the Community of Madrid that connects various neighborhoods with a range of leisure destinations across the city. This service is designed to improve access to popular entertainment venues, parks, and cultural attractions, making it easier for both residents and visitors to experience all that Madrid has to offer. With convenient stops and frequent schedules, our bus line aims to provide a reliable and enjoyable transportation option for those looking to explore the city's vibrant social scene. Passengers will have access to real-time information about bus schedules and routes through multiple channels, including bus stop displays, our website, and the mobile app.
 
 -------- list of the places and in which zones of madrdi are the bus stops, also indicate de routes, order of stops that the bus will follow, for axmplw first in mostole sand then in leganes -----
 ------ picture of the map showing the places anf stops ------
@@ -23,9 +24,17 @@ The system will be capable of handling adverse weather conditions and that speci
 Each bus will undergo regularly scheduled preventive maintenance, thereby minimizing the risk of mechanical failures during operation.
 
 # Stakeholders
+- End-users (passengers)
+- Local government and public transport authorities in Madrid.
+- Control Center: responsible for continuously monitoring the bus fleet, making real-time adjustments to schedules, and responding swiftly to any incidents or delay
+- Developers: responsible for designing and maintaining the ticketing system, reservation platform (both the mobile app and website), and real-time bus tracking features. They also handle the integration of the onboard communication system with the control center, ensuring seamless GPS tracking, 4G payments, and real-time updates.
+- Bus drivers
+- GPS and telecommunications providers (for location tracking and 4G coverage).
+- Payment processing companies ensuring seamless transactions on the bus and online.
+- Bus Maintenance and Cleaning Company.
+- Leisure Destinations: offering joint promotions or discounts to passengers.
 
-
-# summary of requirements
+# Summary of requirements
 ## Functional Requirements
 - Multi-Modal Transport Integration: The system must provide options for various transport modes (metro, buses, taxis,
   bike-sharing) to facilitate seamless transitions between them.

@@ -13,15 +13,17 @@ We have launched a new bus line within the Community of Madrid that connects var
 
 --- number of people we can transport in a day, 48 people is the capacity os the bus --- The average number of passengers per trip will be sufficient to justify the operation of each bus, as we believe it will effectively accommodate the demand from passengers interested in visiting various leisure destinations.
 
-The buses will transmit information to the control center at regular intervals, specifically every 10 minutes. This scheduled communication will ensure that the control center maintains a constant flow of real-time data regarding the location and operational status of each bus in the fleet.
+- Tickets can be purchased online or directly on the bus. This means that ticket reservations can only be made online, as we do not have a bus station where tickets can be bought.
 
-The traffic management system will be capable of identifying and predicting delays caused by traffic in real time. This functionality will enable the control center to make necessary adjustments to routes and schedules, ensuring that service remains efficient and reliable for all passengers. By proactively addressing potential delays, the system can enhance the overall travel experience and minimize disruption to the bus schedule. Additionally, the system will be equipped to modify routes in response to roadworks, public events or demonstrations, allowing for seamless adaptation to changing traffic conditions.
+- The buses will transmit information to the control center at regular intervals. This scheduled communication will ensure that the control center maintains a constant flow of real-time data regarding the location and operational status of each bus in the fleet.
 
-It is assumed that the 4G network coverage will be sufficient along the entire bus route to enable continuous communication between the bus and the control center, as we will be operating in areas within the Community of Madrid. This reliable coverage will ensure uninterrupted connectivity at all times, which is also essential for processing card payments and mobile transactions.
+- The traffic management system will be capable of identifying and predicting delays caused by traffic in real time. This functionality will enable the control center to make necessary adjustments to routes and schedules, ensuring that service remains efficient and reliable for all passengers. By proactively addressing potential delays, the system can enhance the overall travel experience and minimize disruption to the bus schedule. Additionally, the system will be equipped to modify routes in response to roadworks, public events or demonstrations, allowing for seamless adaptation to changing traffic conditions.
 
-The system will be capable of handling adverse weather conditions and that specific protocols will be implemented to ensure the safety of passengers and drivers in these situations.
+- It is assumed that the 4G network coverage will be sufficient along the entire bus route to enable continuous communication between the bus and the control center, as we will be operating in areas within the Community of Madrid. This reliable coverage will ensure uninterrupted connectivity at all times, which is also essential for processing card payments and mobile transactions.
 
-Each bus will undergo regularly scheduled preventive maintenance, thereby minimizing the risk of mechanical failures during operation.
+- The system will be capable of handling adverse weather conditions and that specific protocols will be implemented to ensure the safety of passengers and drivers in these situations.
+
+- Each bus will undergo regularly scheduled preventive maintenance, thereby minimizing the risk of mechanical failures during operation.
 
 # Stakeholders
 - End-users (passengers)
@@ -29,46 +31,47 @@ Each bus will undergo regularly scheduled preventive maintenance, thereby minimi
 - Control Center: responsible for continuously monitoring the bus fleet, making real-time adjustments to schedules, and responding swiftly to any incidents or delay
 - Developers: responsible for designing and maintaining the ticketing system, reservation platform (both the mobile app and website), and real-time bus tracking features. They also handle the integration of the onboard communication system with the control center, ensuring seamless GPS tracking, 4G payments, and real-time updates.
 - Bus drivers
-- GPS and telecommunications providers (for location tracking and 4G coverage).
+- GPS, telecommunications, and radio communication providers: responsible for ensuring location tracking, 4G coverage, and secure radio communication between the bus drivers and the control center.
 - Payment processing companies ensuring seamless transactions on the bus and online.
 - Bus Maintenance and Cleaning Company.
 - Leisure Destinations: offering joint promotions or discounts to passengers.
 
 # Summary of requirements
 ## Functional Requirements
-- Multi-Modal Transport Integration: The system must provide options for various transport modes (metro, buses, taxis,
-  bike-sharing) to facilitate seamless transitions between them.
-- Real-Time Information:Users must receive up-to-date information about transport schedules, availability, and delays
-  via a mobile application and website.
-- Real-Time Alerts:Send notifications to users about transport delays, route changes, or special promotions for leisure
-  activities.
-- Data Analytics and Reporting:Implement data analytics tools to track user behavior, popular routes, and leisure
-  activity preferences for future planning.
-- Interactive Maps:Provide interactive maps with transport routes, leisure attractions, and points of interest to help
-  users navigate the city.
-- Booking and Payment System:The platform should enable users to book and pay for transport services and entry tickets
-  to leisure activities in a single transaction.
-- User Profiles and Preferences:Users should be able to create profiles to save preferences, previous trips, and
-  favorite leisure destinations
-- Emergency Services Integration:Ensure that the system includes features for users to contact emergency services or
-  report issues while using transport services.
-- Necessary information for the user: bus station, frequency, schedule, stops, etc.
+- **FUN-LOC-001** (Geolocation of buses): The system shall continuously monitor and track the real-time location of each bus, displaying this information on the control center dashboard and through online features accessible to passengers.
+- **FUN-STATUS-002** (Bus status and faults): The onboard system shall monitor and report the operational status of the bus, including detecting and transmitting faults to the control center for maintenance requests.
+- **FUN-DB-003** (Local bus database): Each bus shall maintain a local database to store events such as breakdowns, passenger counts per trip, significant delays and passenger complaints.
+- **FUN-OCCUP-004** (Occupancy level): The onboard system shall monitor and report the number of available seats in real-time, updating both the control center and the digital passenger services.
+- **FUN-COMM-005** (Driver communication): The system shall allow for two-way communication between the bus driver and the control center.
+- **FUN-PANL-006** (Passenger information panel): the onboard passenger information panel shall display real-time updates about the bus route, including upcoming stops, arrival times, delays and route deviations due to events, construction work, traffic...
+- **FUN-PANL-007** (Passenger information at bus stops): the information panels at bus stops shall display the estimated wait time for the next bus, the number of available seats and any route deviations.
+- **FUN-ONL-008** (Online Passenger Information): The system shall offer passengers real-time updates regarding bus schedules, current locations, and estimated arrival times. Additionally, it shall feature an interactive map displaying all bus stop locations, along with comprehensive details about the destinations served by each stop and the ticket prices for every route
+- **FUN-TICK-009** (Onlien Ticket Reservation): The system shall enable passengers to make ticket reservations online, ensuring that all data is synchronized with the central server.
+- **FUN-PAY-010** (Payment): Users must have the option to purchase their tickets either directly on the bus or online.
+- **FUN-HIST-011** (Historical data): the bus shall periodically send historical data (such as route timings, incidents, and delays) to the control center for performance analysis.
+- **FUN-USER-012** (User Profiles and Subscription): The system shall provide an online subscription feature that allows users to create profiles to save their preferences, previous trips, and favorite leisure destinations
+- **FUN-ALERT-013** (Real-Time Alerts): The system shall send notifications exclusively to subscribed users regarding transport delays, route changes or special promotions for leisure activities.
 
 ## Non-Functional Requirements
-- Language Support:Offer multilingual support for the mobile application and website to cater to international
-  visitors.
-- Privacy and Data Protection:Ensure that user data is protected through secure data storage, encryption, and compliance
-  with data protection regulations.
-- Integration with Payment Gateways: Support multiple payment options, including credit cards, mobile wallets, and
-  contactless payments, for booking transport services and leisure activities. Since we operate within the Community of Madrid, rather than in rural areas, we will ensure reliable 4G connectivity at all times to facilitate successful payment transactions. Furthermore, passengers will have the convenience of reserving tickets online for a specific time through our user-friendly app or website. This combination of flexible payment methods and online reservations is designed to enhance the overall travel experience for our customers, making it easier and more efficient to enjoy the vibrant leisure offerings in the city.
+- **NFUNC-PAY-014** (Secure Online Payments): Online payments made via card will be processed securely and without additional costs, provided that the cards are compatible with the Spanish payment system. Passengers will have the option to pay in cash or by card, including contactless payments, while on the bus.
+- **NFUNC-INFO-015** (Passenger Information Access): Passengers will have access to online information through both a dedicated mobile app and the official website, ensuring they have the latest updates and details at their fingertips.
+- **NFUNC-SUBS-016** (Subscription Notifications): Subscriptions will be managed via email, where users will receive all relevant notifications and confirmations regarding their service preferences.
+- **NFUNC-BILAN-017** (Bilingual Support): Both the mobile app and the website will be available in two languages, offering content in Spanish and English to accommodate a diverse user base.
+- **NFUNC-COMM-018** (Driver-Control Center Communication): Communication between the bus driver and the control center regarding the start and end of routes, as well as any incidents, will primarily take place via radio. If there are any issues with radio communication, alternative messages can be sent to ensure effective communication
+- **NFUNC-DATA-019** (Real-Time Data Transmission): The onboard system of the bus will periodically and automatically send the information collected during the journey every five minutes via a 4G connection. This information will include data on the bus's location, the number of passengers and the mechanical status. Similarly, the control center will be able to send commands or modifications to the bus using the same communication channel, ensuring continuous and effective interaction between both systems.
 
-## Domain Requirements
+## Operation domain Requirements
 - Compliance with Local Regulations: All transport services must comply with local transportation laws and safety
   regulations.
 - Emergency Response Planning: Develop protocols for responding to emergencies, accidents, and natural disasters within
   the transport system to ensure user safety and service continuity.
 
-## Quality Requirements
+## Quality requirements
+- la aplia ion esra diseñan de forma sencilla e intuitiva para que todo el muendo puedo usarla sin problemas
+
+# Analyze the impact of quality attributes
+- Accessibility Features:Ensure that all transport modes and the booking platform are fully accessible to individuals
+  with disabilities.
 - Performance and Scalability:The system should handle high volumes of users, especially during peak tourist seasons,
   without performance degradation.
 - Usability:The mobile application and website must have an intuitive user interface, ensuring easy navigation and quick
@@ -76,7 +79,7 @@ Each bus will undergo regularly scheduled preventive maintenance, thereby minimi
 - Reliability:Transport services should maintain a high level of reliability with minimal downtime, especially during
   operational hours.
 - Security:User data must be protected through robust security measures, including encryption for payment processing and
-  personal information.
+  personal information. proteccion de datos en las subcricione sy canales de comuniaion segueros entre el centro de control y el autobus
 - Maintainability: The system should be designed for easy updates and maintenance to incorporate user feedback and new
   features.
 - Data Accuracy: Ensure that all information related to transport schedules, availability, and leisure activities is
@@ -97,7 +100,3 @@ Each bus will undergo regularly scheduled preventive maintenance, thereby minimi
 
 # Class diagram
 Identification of classes, relationship between them and multiplicity
-
-# Identification of some relevant quality attributes (Quality Requirements)
-- Accessibility Features:Ensure that all transport modes and the booking platform are fully accessible to individuals
-  with disabilities.

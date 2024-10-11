@@ -61,42 +61,27 @@ We have launched a new bus line within the Community of Madrid that connects var
 - **NFUNC-DATA-019** (Real-Time Data Transmission): The onboard system of the bus will periodically and automatically send the information collected during the journey every five minutes via a 4G connection. This information will include data on the bus's location, the number of passengers and the mechanical status. Similarly, the control center will be able to send commands or modifications to the bus using the same communication channel, ensuring continuous and effective interaction between both systems.
 
 ## Operation domain Requirements
-- Compliance with Local Regulations: All transport services must comply with local transportation laws and safety
-  regulations.
-- Emergency Response Planning: Develop protocols for responding to emergencies, accidents, and natural disasters within
-  the transport system to ensure user safety and service continuity.
+- **DOM-ENV-020** (Operational Environment): The bus service shall operate effectively in urban areas, adapting to varying traffic conditions and road types.
+- **DOM-SCHEDULE-021** (Timetable Flexibility): The bus service shall maintain flexible scheduling to accommodate peak and off-peak hours, ensuring availability for both regular commuters and occasional users.
+- **DOM-REGULATIONS-022** (Compliance with Local Laws and Regulations): The bus service must comply with all local transportation regulations, safety standards, and environmental requirements applicable to the areas of operation.
+- **DOM-USER-023** (User Demographics): The system shall consider the diverse needs of users, including passengers with disabilities, ensuring accessibility and ease of use for all
 
 ## Quality requirements
-- la aplia ion esra diseñan de forma sencilla e intuitiva para que todo el muendo puedo usarla sin problemas
+- **QUAL-ACCESS-024** (Accessibility Features and Compliance): Ensure that all transport modes and the booking platform are fully accessible to individuals with disabilities and that the system meets accessibility standards such as WCAG to provide equal access to all users.
+- **QUAL-EMER-025** (Emergency Response Planning): Develop protocols for responding to emergencies, accidents, and natural disasters within the transport system to ensure user safety and service continuity.
+- **QUAL-USAB-026** (Usability): The mobile application and website must have an intuitive user interface, ensuring easy navigation and quick access to services.
+- **QUAL-MAIN-027** (Maintainability): The system should be designed for easy updates and maintenance to incorporate user feedback and new features.
+- **QUAL-ACC-028** (Data Accuracy): Ensure that all information related to transport schedules, availability, and leisure activities is accurate and updated regularly.
+- **QUAL-COMP-029** (Compliance): The system must comply with data protection laws, privacy regulations, and accessibility standards to ensure user trust and legal compliance. Implement privacy features such as data anonymization, consent management, and user control over personal information.
+- **QUAL-SECPAY-030** (Secure Payments): The system shall implement strong security measures to safeguard user data, particularly during payment processing. This includes the use of encryption to guarantee that all transactions are secure and protected against unauthorized access.
+- **QUAL-SECDATA-031** (Data Protection in Subscriptions and Authentication): Implement strong data protection measures for user subscriptions, ensuring that personal information is securely stored and managed. Utilize real authentication methods to verify user identities and prevent unauthorized access.
+- **QUAL-SECCOMM-032** (Secure Communications): Ensure secure communication channels between the control center and the bus, protecting data transmitted during operational activities. This includes measures such as encryption and secure messaging protocols to safeguard user information and operational data.
 
 # Analyze the impact of quality attributes
-- Accessibility Features:Ensure that all transport modes and the booking platform are fully accessible to individuals
-  with disabilities.
-- Performance and Scalability:The system should handle high volumes of users, especially during peak tourist seasons,
-  without performance degradation.
-- Usability:The mobile application and website must have an intuitive user interface, ensuring easy navigation and quick
-  access to services.
-- Reliability:Transport services should maintain a high level of reliability with minimal downtime, especially during
-  operational hours.
-- Security:User data must be protected through robust security measures, including encryption for payment processing and
-  personal information. proteccion de datos en las subcricione sy canales de comuniaion segueros entre el centro de control y el autobus
-- Maintainability: The system should be designed for easy updates and maintenance to incorporate user feedback and new
-  features.
-- Data Accuracy: Ensure that all information related to transport schedules, availability, and leisure activities is
-  accurate and updated regularly.
-- Compliance: The system must comply with data protection laws, privacy regulations, and accessibility standards to
-  ensure user trust and legal compliance. Implement privacy features such as data anonymization, consent management, and
-  user control over personal information to protect user privacy and comply with data protection regulations.
-- Performance Optimization: Optimize system performance through caching, load balancing, and other techniques to ensure
-  fast response times and efficient resource utilization.
-- Accessibility Compliance: Ensure that the system meets accessibility standards such as WCAG to provide equal access to
-  users with disabilities.
-- Security Compliance: Implement security best practices such as encryption, authentication, and authorization to
-  protect user data and prevent unauthorized access.
-- Sensor Integration: Integrate with sensors and IoT devices to collect real-time data on traffic conditions, weather
-  patterns, and user behavior to optimize transport services and improve user experience.
+-------- Analyze the impact of quality attributes by creating a utility tree and prioritizing them by relevance and complexity to determine how they impact the architecture ----
 
-# Use case diagram
+# Use case diagram (scenarios view)
 
-# Class diagram
-Identification of classes, relationship between them and multiplicity
+# Class diagram (logical view)
+
+# Sequence diagrams (process view)

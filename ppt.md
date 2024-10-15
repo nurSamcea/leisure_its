@@ -78,7 +78,7 @@ A new bus line has been launched within the Community of Madrid, connecting vari
 - Control Center: responsible for continuously monitoring the bus fleet, making real-time adjustments to schedules, and responding swiftly to any incidents or delays.
 - Developers: responsible for designing and maintaining the ticketing system, reservation platform (both the mobile app and website), and real-time bus tracking features. They also handle the integration of the onboard communication system with the control center, ensuring seamless GPS tracking, 4G payments, and real-time updates.
 - Bus drivers
-- GPS, telecommunications and radio communication providers: responsible for ensuring location tracking, 4G coverage, and secure radio communication between the bus drivers and the control center.
+- GPS, telecommunications, technology and radio communication providers: responsible for ensuring location tracking, 4G coverage, presence sensor, speaker and secure radio communication between the bus drivers and the control center.
 - providers of air conditioning system.
 - Payment processing companies ensuring seamless transactions on the bus and online.
 - Bus Maintenance and Cleaning Company, including fuel refueling.
@@ -110,18 +110,18 @@ A new bus line has been launched within the Community of Madrid, connecting vari
 - **NFUNC-COMM-018** (Driver-Control Center Communication): Communication between the bus driver and the control center regarding the start and end of routes, as well as any incidents, will primarily take place via radio. If there are any issues with radio communication, alternative messages can be sent to ensure effective communication.
 - **NFUNC-DATA-019** (Real-Time Data Transmission): The onboard system of the bus will periodically and automatically send the information collected during the journey every five minutes via a 4G connection. This information will include data on the bus's location, the number of passengers, and the mechanical status. Similarly, the control center will be able to send commands or modifications to the bus using the same communication channel, ensuring continuous and effective interaction between both systems.
 - **NFUNC-PAY-020** (Secure Online Payments): Online payments made via card will be processed securely and without additional costs, provided that the cards are compatible with the Spanish payment system. Passengers will have the option to pay in cash or by card, including contactless payments, while on the bus.
+- **NFUN-OCCUP-021** (Occupancy level): : This can be measured either through ticket sales or with a presence sensor on the bus, which helps determine if a ticketed passenger has not boarded the vehicle.
 
 ## Operation Domain Requirements
-- **DOM-ENV-021** (Operational Environment): The bus service shall operate effectively in urban areas, adapting to varying traffic conditions and road types.
-- **DOM-REGULATIONS-022** (Compliance with Local Laws and Regulations): The bus service must comply with all local transportation regulations, safety standards, and environmental requirements applicable to the areas of operation.
+- **DOM-ENV-022** (Operational Environment): The bus service shall operate effectively in urban areas, adapting to varying traffic conditions and road types.
+- **DOM-REGULATIONS-023** (Compliance with Local Laws and Regulations): The bus service must comply with all local transportation regulations, safety standards, and environmental requirements applicable to the areas of operation.
 
 ## Quality Requirements
-- **QUAL-CLM-023**: The bus shall be equipped with an air conditioning system to ensure passenger comfort
-- **QUAL-ACCESS-024**: The system must consider users with disabilities both when boarding the bus and when purchasing or reserving their tickets on digital platforms.
-- **QUAL-PERF-025**: The bus historical data shall be collected for subsequent analysis by the control center. This will enable improvements in performance and efficiency of the system, such as determining whether additional buses are needed at certain times of the day or adjusting routes for faster service.
-- **QUAL-CNT-026**: Contingency plans shall be established to address issues with passengers, including serious health conditions, conflicts, and disruptive behaviors.
-- **QUAL-EMER-027** (Emergency Response Planning): Develop protocols for responding to emergencies, accidents and natural disasters within the transport system to ensure user safety and service continuity.
-- **QUAL-USAB-028** (Usability): The mobile application and website must have an intuitive user interface, ensuring easy navigation and quick access to services.
+- **QUAL-CLM-024**: The bus shall be equipped with an air conditioning system to ensure passenger comfort.
+- **QUAL-ACCESS-025**: The system must be accessible to people with disabilities. The bus will have an entrance for individuals with reduced mobility and a speaker to announce the next stop for visually impaired passengers. Additionally, the app will be compatible with the TalkBack accessibility too
+- **QUAL-PERF-026**: The bus historical data shall be collected for subsequent analysis by the control center. This will enable improvements in performance and efficiency of the system, such as determining whether additional buses are needed at certain times of the day or adjusting routes for faster service.
+- **QUAL-CNT-027**: Contingency plans shall be established to address issues with passengers, including serious health conditions, conflicts, and disruptive behaviors.
+- **QUAL-EMER-028** (Emergency Response Planning): Develop protocols for responding to emergencies, accidents and natural disasters within the transport system to ensure user safety and service continuity.
 - **QUAL-MAIN-029** (Maintainability): The system should be designed for easy updates and maintenance to incorporate user feedback and new features.
 - **QUAL-ACC-030** (Data Accuracy): Ensure that all information related to transport schedules, availability, and leisure activities is accurate and updated regularly.
 - **QUAL-COMP-031** (Compliance): The system must comply with data protection laws privacy regulations, and accessibility standards to ensure user trust and legal compliance. Implement privacy features such as data anonymization, consent management, and user control over personal information.
@@ -129,6 +129,7 @@ A new bus line has been launched within the Community of Madrid, connecting vari
 - **QUAL-SECDATA-033** (Data Protection in Subscriptions and Authentication): Implement strong data protection measures for user subscriptions, ensuring that personal information is securely stored and managed. Utilize real authentication methods to verify user identities and prevent unauthorized access.
 - **QUAL-SECCOMM-034** (Secure Communications): Ensure secure communication channels between the control center and the bus, protecting data transmitted during operational activities. This includes measures such as encryption and secure messaging protocols to safeguard user information and operational data.
 - **QUAL-WRK-035**: The system must comply with labor laws regarding driver work hours, ensuring that no driver exceeds the maximum allowable driving time. This includes monitoring shift lengths and providing necessary breaks to guarantee the safety and well-being of all drivers.
+- **QUAL-USAB-036** (Usability): The mobile application and website must have an intuitive user interface, ensuring easy navigation and quick access to services.
 
 # Analyze the Impact of Quality Attributes
 

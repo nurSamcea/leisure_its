@@ -79,7 +79,7 @@ A new bus line has been launched within the Community of Madrid, connecting vari
 - Developers: responsible for designing and maintaining the ticketing system, reservation platform (both the mobile app and website), and real-time bus tracking features. They also handle the integration of the onboard communication system with the control center, ensuring seamless GPS tracking, 4G payments, and real-time updates.
 - Bus drivers
 - GPS, telecommunications, technology and radio communication providers: responsible for ensuring location tracking, 4G coverage, presence sensor, speaker and secure radio communication between the bus drivers and the control center.
-- providers of air conditioning system.
+- Providers of air conditioning system.
 - Payment processing companies ensuring seamless transactions on the bus and online.
 - Bus Maintenance and Cleaning Company, including fuel refueling.
 - Workshops: including parts replacement service, tow trucks, etc.
@@ -90,7 +90,7 @@ A new bus line has been launched within the Community of Madrid, connecting vari
 ## Functional Requirements
 - **FUN-LOC-001** (Geolocation of buses): The system shall continuously monitor and track the real-time location of each bus, displaying this information on the control center dashboard and through online features accessible to passengers.
 - **FUN-STATUS-002** (Bus status): The onboard system shall monitor and report the operational status of the bus, including whether it is out of service, stationary, fully occupied, its current route, its location on the route, any faults detected, if it is stuck in traffic...
-- **FUN-HIST-003**: Each bus shall maintain a local database to log events such as breakdowns, passenger counts per trip, and significant delays. This information must be transmitted to the control center for analysis.
+- **FUN-HIST-003** (Historical database): Each bus shall maintain a local database to log events such as breakdowns, passenger counts per trip, and significant delays. This information must be transmitted to the control center for analysis.
 - **FUN-OCCUP-004** (Occupancy level): The onboard system shall monitor and report the number of available seats in real-time, updating both the control center and the digital passenger services.
 - **FUN-COMM-005** (Driver Communication): The system shall facilitate two-way communication between the bus driver and the control center for urgent information exchange, including the start and end of routes, incidents, and significant delays.
 - **FUN-PANL-006** (Passenger information panel): The onboard passenger information panel shall display real-time updates about the bus route, including upcoming stops, arrival times, delays, and route deviations due to events, construction work, or traffic.
